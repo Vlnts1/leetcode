@@ -6,6 +6,7 @@ module.exports = {
 
   rules: {
     '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-var-requires': 'true',
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/no-empty-function': 'off',

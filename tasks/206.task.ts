@@ -1,8 +1,16 @@
-// 206. Reverse Linked List O(n)
+class ListNode {
+  value: number;
+  next: ListNode | null;
 
-const reverseList = (head: any) => {
-  let prevNode = null;
-  let current = head;
+  constructor(value = 0) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+const reverseList = (head: ListNode) => {
+  let prevNode = null as ListNode | null;
+  let current = head as ListNode | null;
   while (current) {
     const nextNode = current.next;
     current.next = prevNode;
@@ -22,12 +30,11 @@ const head = {
         value: 4,
         next: {
           value: 5,
+          next: null,
         },
       },
     },
   },
 };
-
 console.log(reverseList(head));
-
 module.exports = reverseList;
